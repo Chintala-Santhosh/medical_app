@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Client",
+    "subTitle": "CLIENT, NEW",
+    "iconImage": "assets/images/forward_arrow.png"
+  },
+  {
+    "title": "Prescription Drug",
+    "subTitle": "",
+    "iconImage": "assets/images/forward_arrow.png"
+  },
+  {
+    "title": "Dosage",
+    "subTitle": "",
+    "iconImage": "assets/images/forward_arrow.png"
+  },
+  {
+    "title": "Frequency",
+    "subTitle": "",
+    "iconImage": "assets/images/drop_down.png"
+  },
+  {
+    "title": "Quantity",
+    "subTitle": "",
+    "iconImage": "assets/images/forward_arrow.png"
+  }
+]
