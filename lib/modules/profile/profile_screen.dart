@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:medical_app/modules/utils/body_screen.dart';
 
@@ -15,9 +16,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children:  const [
-          AppBarScreen(title: "Profile",),
-          BodyScreen(name:"007EDIT,001",date: "01/06/2023(Fri)",),
+        children:    [
+          const AppBarScreen(title: "PROFILE",isFromHome:true),
+          BodyScreen(name:"007EDIT,001",date: "01/06/2023(Fri)",isShow: true,),
         ],
       ),
       floatingActionButton:FloatingActionButton(

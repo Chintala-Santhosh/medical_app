@@ -2,26 +2,36 @@
   {
     "title": "Client",
     "subTitle": "CLIENT, NEW",
-    "iconImage": "assets/images/forward_arrow.png"
+    "forwardIcon": "assets/images/forward_arrow.png",
+    "dropDownIcon": "assets/images/dropdown-icon.jpg",
+    "isSelected": true
   },
   {
     "title": "Prescription Drug",
     "subTitle": "",
-    "iconImage": "assets/images/forward_arrow.png"
+    "forwardIcon": "assets/images/forward_arrow.png",
+    "dropDownIcon": "assets/images/dropdown-icon.jpg",
+    "isSelected": true
   },
   {
     "title": "Dosage",
     "subTitle": "",
-    "iconImage": "assets/images/forward_arrow.png"
+    "forwardIcon": "assets/images/forward_arrow.png",
+    "dropDownIcon": "assets/images/dropdown-icon.jpg",
+    "isSelected": true
   },
   {
     "title": "Frequency",
     "subTitle": "",
-    "iconImage": "assets/images/drop_down.png"
+    "forwardIcon": "assets/images/forward_arrow.png",
+    "dropDownIcon": "assets/images/dropdown-icon.jpg",
+    "isSelected": true
   },
   {
     "title": "Quantity",
     "subTitle": "",
-    "iconImage": "assets/images/forward_arrow.png"
+    "forwardIcon": "",
+    "dropDownIcon": "",
+    "isSelected": true
   }
 ]

@@ -10,16 +10,20 @@ String documentsModelToJson(List<DocumentsModel> data) => json.encode(List<dynam
 
 class DocumentsModel {
   String fileName;
+  String date;
 
   DocumentsModel({
     required this.fileName,
+    required this.date,
   });
 
   factory DocumentsModel.fromJson(Map<String, dynamic> json) => DocumentsModel(
     fileName: json["fileName"],
+    date: json["date"],
   );
 
   Map<String, dynamic> toJson() => {
     "fileName": fileName,
+    "date": date,
   };
 }

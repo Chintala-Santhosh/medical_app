@@ -42,36 +42,44 @@ class _DocumentsScreenState extends State<DocumentsScreen> {
     return Scaffold(
       body: Column(
         children:   [
-          AppBarScreen(title: "Documents",),
-          BodyScreen(name:"007EDIT,001",date: "01/06/2023(Fri)",),
+          const AppBarScreen(title: "DOCUMENTS",isFromHome:false),
+           BodyScreen(name:"007EDIT,001",date: "01/06/2023(Fri)",isShow: true),
           Expanded(
             child: Container(
               color: Colors.white,
-              child: ListView.builder(
-                  itemCount: documentsList.length,
-                  itemBuilder: (BuildContext context,int index){
-                    return  Column(
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.only(left: 10,right: 10,top: 10,bottom: 10),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                // mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(documentsList[index].fileName),
-                                ],
-                              ),
+              child: MediaQuery.removePadding(
+                removeTop: true,
+                context: context,
+                child: ListView.builder(
+                    itemCount: documentsList.length,
+                    itemBuilder: (BuildContext context,int index){
+                      return  Column(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.only(left: 10,right: 10,top: 10,bottom: 10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  // mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Text(documentsList[index].fileName),
+                                    const SizedBox(height: 10,),
+                                    Text(documentsList[index].date),
+                                  ],
+                                ),
 
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                        const Divider(thickness: 1,)
-                      ],
-                    );
-                  }),
+                          Container(
+                            margin:const EdgeInsets.only(left:10),
+                              child: const Divider(thickness: 1,))
+                        ],
+                      );
+                    }),
+              ),
             ),
           )
         ],

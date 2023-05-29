@@ -11,23 +11,31 @@ String drugDetailsToJson(List<DrugDetails> data) => json.encode(List<dynamic>.fr
 class DrugDetails {
   String title;
   String subTitle;
-  String iconImage;
+  String forwardIcon;
+  String dropDownIcon;
+  bool isSelected;
 
   DrugDetails({
     required this.title,
     required this.subTitle,
-    required this.iconImage,
+    required this.forwardIcon,
+    required this.dropDownIcon,
+    required this.isSelected,
   });
 
   factory DrugDetails.fromJson(Map<String, dynamic> json) => DrugDetails(
     title: json["title"],
     subTitle: json["subTitle"],
-    iconImage: json["iconImage"],
+    forwardIcon: json["forwardIcon"],
+    dropDownIcon: json["dropDownIcon"],
+    isSelected: json["isSelected"],
   );
 
   Map<String, dynamic> toJson() => {
     "title": title,
     "subTitle": subTitle,
-    "iconImage": iconImage,
+    "forwardIcon": forwardIcon,
+    "dropDownIcon": dropDownIcon,
+    "isSelected": isSelected,
   };
 }
